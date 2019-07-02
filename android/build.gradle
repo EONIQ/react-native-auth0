@@ -3,6 +3,9 @@ buildscript {
         google()
         mavenCentral()
         jcenter()
+        maven {
+            url 'https://dl.google.com/dl/android/maven2'
+        }
     }
 
     dependencies {
@@ -30,12 +33,6 @@ android {
     lintOptions {
         abortOnError false
     }
-}
-
-repositories {
-    google()
-    mavenCentral()
-    jcenter()
 }
 
 def supportVersion = rootProject.hasProperty('supportLibVersion') ? rootProject.supportLibVersion : DEFAULT_SUPPORT_LIB_VERSION
