@@ -1,10 +1,9 @@
 buildscript {
     repositories {
         google()
-        mavenCentral()
         jcenter()
         maven {
-            url 'https://dl.google.com/dl/android/maven2'
+            url 'https://google.bintray.com/exoplayer/'
         }
     }
 
@@ -33,6 +32,10 @@ android {
     lintOptions {
         abortOnError false
     }
+}
+
+repositories {
+    mavenCentral()
 }
 
 def supportVersion = rootProject.hasProperty('supportLibVersion') ? rootProject.supportLibVersion : DEFAULT_SUPPORT_LIB_VERSION
