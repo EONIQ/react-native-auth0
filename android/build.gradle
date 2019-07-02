@@ -46,6 +46,6 @@ def supportVersion = rootProject.hasProperty('supportLibVersion') ? rootProject.
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
-    compile "androidx.browser.customtabs:customtabs:${supportVersion}"
+    compile "androidx:customtabs:${supportVersion}"
 }
 
